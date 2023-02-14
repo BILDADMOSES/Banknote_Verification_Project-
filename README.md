@@ -14,5 +14,7 @@ We imported the necessary libraries that would assist us in performing the requi
 We pulled out the 2 columns we were interested in (v1 & v2) from the data set we were provided with. Afterwards applied K-Means algorithm to the 2 columns (we had conflated into one column first) and came up with the 2 clusters we had pre-defined.
 We ran K-Means multiple times (9) to see if our clustering was stable.
 
+The clustering was fairly stable as we didn’t get many different results every time we rerun k-means. The results were very similar.
+
 Our accuracy was based on the matching values between the original class plot and the kmeans plot out of the entire data set i.e. 1371
 K-Means Result: The accuracy of this K-Means Model is 34.79%. This is not a very good accuracy level and will affect the future results of your experiment on banknote verification. I would advise using another algorithm or find ways of optimize our accuracy rate.
