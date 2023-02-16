@@ -4,7 +4,7 @@ We are creating a way of verifying whether a banknote is original(genuine) or fo
 
 Description of the Data
 
-We have provided a data set containing 1,372 banknotes some which are genuine and some which are false. 
+We have provided a data set containing 1,372 banknotes some which are genuine and some which are false(forged). 
 
 Methods: how the data was analyzed
 
@@ -13,8 +13,17 @@ K-Means is a type of algorithm used in the case of unsupervised learning groupin
 We imported the necessary libraries that would assist us in performing the required operations on the data e.g. putting our data into a table format, visualizing our data etc.
 We pulled out the 2 columns we were interested in (v1 & v2) from the data set we were provided with. Afterwards applied K-Means algorithm to the 2 columns (we had conflated into one column first) and came up with the 2 clusters we had pre-defined.
 We ran K-Means multiple times (9) to see if our clustering was stable.
+The clustering is fairly stable as we didn’t get many different results every time we rerun k-means. The results were very similar.
 
-The clustering was fairly stable as we didn’t get many different results every time we rerun k-means. The results were very similar.
+Summary of the result
 
-Our accuracy was based on the matching values between the original class plot and the kmeans plot out of the entire data set i.e. 1371
-K-Means Result: The accuracy of this K-Means Model is 34.79%. This is not a very good accuracy level and will affect the future results of your experiment on banknote verification. I would advise using another algorithm or find ways of optimize our accuracy rate.
+There are 599 data being clustered in group 0 and 773 being clustered in group 1 after k-means.
+
+Visualization of Result
+
+Our accuracy was based on the matching values between the original class plot and the k-means plot out of the entire data set i.e. 1371
+K-Means Result: The accuracy of this K-Means Model is 34.79%.
+Recommendations
+The accuracy level will affect the future results of your experiment on banknote verification. I would advise using another algorithm or find ways of optimize our accuracy rate.
+
+
